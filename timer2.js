@@ -30,5 +30,7 @@ process.stdin.on('data', key => {
   } else if (key === '\u0003') { // if ctrl + C, log message and exit
     console.log("Thanks for using me, ciao!");
     process.exit();
+  } else {
+    console.log('Please try again!');
   }
 });
